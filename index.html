@@ -1,0 +1,738 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Acervo | Memórias</title>
+
+    <!-- Fonte elegante para títulos -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+
+<body>
+
+
+<header>
+    <img src="img/bandeira.jpg" alt="bandeira" class="lgbt">
+    <div class="logo">
+        <h1>Acervo Gamila</h1>
+        <span>Meiga & Abusada</span>
+    </div>
+
+
+    <nav>
+
+        <a href="#inicio">Início</a>
+        <a href="#galeria">Galeria</a>
+        <a href="#sobre">Sobre</a>
+        <a href="#contato">Contato</a>
+
+    </nav>
+
+
+</header>
+
+
+
+<section class="hero" id="inicio">
+
+    <div class="hero-text">
+
+        <h2>Museu da Gamila</h2>
+
+        <p>
+            Ex gay, periferica e negra. Um documento para
+	    conservar a historia de Gamila.
+           
+        </p>
+
+        <button onclick="document.getElementById('galeria').scrollIntoView()">
+            Ver coleção
+        </button>
+
+    </div>
+
+</section>
+
+
+
+
+<section class="controle">
+
+    <input 
+    type="text" 
+    id="pesquisa"
+    placeholder="Pesquisar no acervo..."
+    >
+
+
+    <div class="filtros">
+
+        <button class="filtro ativo" data-categoria="todos">
+            Todos
+        </button>
+
+        <button class="filtro" data-categoria="cunt">
+            Servindo Cunt
+        </button>
+
+        <button class="filtro" data-categoria="reliquia">
+            Reliquias
+        </button>
+
+
+    </div>
+
+
+</section>
+
+
+
+
+
+<section class="galeria" id="galeria">
+
+
+
+    <article class="card" data-categoria="cunt">
+
+
+        <img 
+        src="img/emor.jpg" 
+        alt="Fotografia antiga"
+        onclick="abrirImagem(this.src)"
+        >
+
+
+        <div class="info">
+
+            <h3>EMOR</h3>
+
+            <p>
+                Agente só queremos brincar.
+            </p>
+
+        </div>
+
+
+    </article>
+
+    <article class="card" data-categoria="cunt">
+
+
+        <img 
+        src="img/idosa.jpg" 
+        alt="Fotografia antiga"
+        onclick="abrirImagem(this.src)"
+        >
+
+
+        <div class="info">
+
+            <h3>Memórias Postumas</h3>
+
+            <p>
+                Registro especial guardado no acervo.
+            </p>
+
+        </div>
+
+
+    </article>
+
+    <article class="card" data-categoria="cunt">
+
+
+        <img 
+        src="img/chapeu.jpg" 
+        alt="Fotografia antiga"
+        onclick="abrirImagem(this.src)"
+        >
+
+
+        <div class="info">
+
+            <h3>Chuca Benta</h3>
+
+            <p>
+                No chinês experimentando chapeu
+            </p>
+
+        </div>
+
+
+    </article>
+
+    <article class="card" data-categoria="reliquia">
+
+
+        <img 
+        src="img/teatro.jpg" 
+        alt="Fotografia antiga"
+        onclick="abrirImagem(this.src)"
+        >
+
+
+        <div class="info">
+
+            <h3>Dia de Teatro</h3>
+
+            <p>
+                Dia Legal 
+            </p>
+
+        </div>
+
+
+    </article>
+
+     <article class="card" data-categoria="requilia">
+
+
+        <img 
+        src="img/chiquinho.jpg" 
+        alt="Fotografia antiga"
+        onclick="abrirImagem(this.src)"
+        >
+
+
+        <div class="info">
+
+            <h3>Chiquinho</h3>
+
+            <p>
+                Tomando sorvete no chiquinho.
+            </p>
+
+        </div>
+
+
+    </article>
+
+    <article class="card" data-categoria="cunt">
+
+
+        <img 
+        src="img/dametocusita.jpg" 
+        alt="Fotografia antiga"
+        onclick="abrirImagem(this.src)"
+        >
+
+
+        <div class="info">
+
+            <h3>Dametocusita</h3>
+
+            <p>
+                Ai
+            </p>
+
+        </div>
+
+
+    </article>
+
+    <article class="card" data-categoria="reliquia">
+
+
+        <img 
+        src="img/cachoeira.jpg" 
+        alt="Fotografia antiga"
+        onclick="abrirImagem(this.src)"
+        >
+
+
+        <div class="info">
+
+            <h3>Cachoeira</h3>
+
+            <p>
+                Dia legal de cachoeira
+            </p>
+
+        </div>
+
+
+    </article>
+
+    <article class="card" data-categoria="cunt">
+
+
+        <img 
+        src="img/cadeira.jpg" 
+        alt="Fotografia antiga"
+        onclick="abrirImagem(this.src)"
+        >
+
+
+        <div class="info">
+
+            <h3>Cadeira</h3>
+
+            <p>
+                Cadeira de lésbica
+            </p>
+
+        </div>
+
+
+    </article>
+    
+    <article class="card" data-categoria="reliquia">
+
+
+        <img 
+        src="img/carna.jpg" 
+        alt="Fotografia antiga"
+        onclick="abrirImagem(this.src)"
+        >
+
+
+        <div class="info">
+
+            <h3>Carnaval</h3>
+
+            <p>
+                Dia legal de carnaval
+            </p>
+
+        </div>
+
+
+    </article>
+
+    <article class="card" data-categoria="cunt">
+
+
+        <img 
+        src="img/dentinho.jpg" 
+        alt="Fotografia antiga"
+        onclick="abrirImagem(this.src)"
+        >
+
+
+        <div class="info">
+
+            <h3>Dentes</h3>
+
+            <p>
+                Muitos dentes
+            </p>
+
+        </div>
+
+
+    </article>
+
+    <article class="card" data-categoria="cunt">
+
+
+        <img 
+        src="img/emo.jpg" 
+        alt="Fotografia antiga"
+        onclick="abrirImagem(this.src)"
+        >
+
+
+        <div class="info">
+
+            <h3>É só uma fase mãe</h3>
+
+            <p>
+                Não é só uma fase mãe
+            </p>
+
+        </div>
+
+
+    </article>
+    
+    <article class="card" data-categoria="reliquia">
+
+
+        <img 
+        src="img/escola.jpg" 
+        alt="Fotografia antiga"
+        onclick="abrirImagem(this.src)"
+        >
+
+
+        <div class="info">
+
+            <h3>Escola</h3>
+
+            <p>
+                Dia legal na escola
+            </p>
+
+        </div>
+
+
+    </article>
+
+    <article class="card" data-categoria="cunt">
+
+
+        <img 
+        src="img/escovadedente.jpg" 
+        alt="Fotografia antiga"
+        onclick="abrirImagem(this.src)"
+        >
+
+
+        <div class="info">
+
+            <h3>Escovação</h3>
+
+            <p>
+                Higiene Bocal
+            </p>
+
+        </div>
+
+
+    </article>
+
+    <article class="card" data-categoria="cunt">
+
+
+        <img 
+        src="img/fotojoinha.jpg" 
+        alt="Fotografia antiga"
+        onclick="abrirImagem(this.src)"
+        >
+
+
+        <div class="info">
+
+            <h3>Joinha</h3>
+
+            <p>
+                Joinha
+            </p>
+
+        </div>
+
+
+    </article>
+
+    <article class="card" data-categoria="cunt">
+
+
+        <img 
+        src="img/joganouno.jpg" 
+        alt="Fotografia antiga"
+        onclick="abrirImagem(this.src)"
+        >
+
+
+        <div class="info">
+
+            <h3>Uno</h3>
+
+            <p>
+                Kakegurui uno
+            </p>
+
+        </div>
+
+
+    </article>
+
+    <article class="card" data-categoria="reliquia">
+
+
+        <img 
+        src="img/nosnapiscina.jpg" 
+        alt="Fotografia antiga"
+        onclick="abrirImagem(this.src)"
+        >
+
+
+        <div class="info">
+
+            <h3>Piscininha</h3>
+
+            <p>
+                (Eu estava mijando na hora)
+            </p>
+
+        </div>
+
+
+    </article>
+
+    <article class="card" data-categoria="cunt">
+
+
+        <img 
+        src="img/viagemdaescola.jpg" 
+        alt="Fotografia antiga"
+        onclick="abrirImagem(this.src)"
+        >
+
+
+        <div class="info">
+
+            <h3>Viagem</h3>
+
+            <p>
+                Dissociando
+            </p>
+
+        </div>
+
+
+    </article>
+
+    <article class="card" data-categoria="reliquia">
+
+
+        <img 
+        src="img/vanessadajg.jpg" 
+        alt="Fotografia antiga"
+        onclick="abrirImagem(this.src)"
+        >
+
+
+        <div class="info">
+
+            <h3>Vanessa da Jungle</h3>
+
+            <p>
+                Dia legal de Show
+            </p>
+
+        </div>
+
+
+    </article>
+
+    <article class="card" data-categoria="cunt">
+
+
+        <img 
+        src="img/fuckyou.jpg" 
+        alt="Fotografia antiga"
+        onclick="abrirImagem(this.src)"
+        >
+
+
+        <div class="info">
+
+            <h3>Fuck You</h3>
+
+            <p>
+                Criando conceitos
+            </p>
+
+        </div>
+
+
+    </article>
+
+    <article class="card" data-categoria="requilia">
+
+
+        <img 
+        src="img/2016vibes.jpg" 
+        alt="Fotografia antiga"
+        onclick="abrirImagem(this.src)"
+        >
+
+
+        <div class="info">
+
+            <h3>Meu Deus do Ceu</h3>
+
+            <p>
+                Epoca que o ceu era mais colorido
+            </p>
+
+        </div>
+
+
+    </article>
+   
+    
+
+    <article class="card" data-categoria="cunt">
+
+
+        <img 
+        src="img/nadadora.jpg"
+        alt="Obra artística"
+        onclick="abrirImagem(this.src)"
+        >
+
+
+        <div class="info">
+
+            <h3>Nadadora</h3>
+
+            <p>
+                Peixe palhaço
+            </p>
+
+        </div>
+
+
+    </article>
+
+
+    <article class="card" data-categoria="cunt">
+
+
+        <img 
+        src="img/camilabocuda.jpg"
+        alt="Fotografia"
+        onclick="abrirImagem(this.src)"
+        >
+
+
+        <div class="info">
+
+            <h3>Lindah</h3>
+
+            <p>
+                Natural 
+            </p>
+
+        </div>
+
+
+    </article>
+
+    <article class="card" data-categoria="cunt">
+
+
+        <img 
+        src="img/vareta.jpg"
+        alt="Fotografia"
+        onclick="abrirImagem(this.src)"
+        >
+
+
+        <div class="info">
+
+            <h3>Alogando</h3>
+
+            <p>
+                Pisque o cu lentamente
+            </p>
+
+        </div>
+
+
+    </article>
+
+    <article class="card" data-categoria="reliquia">
+
+
+        <img 
+        src="img/parque.jpg"
+        alt="Fotografia"
+        onclick="abrirImagem(this.src)"
+        >
+
+
+        <div class="info">
+
+            <h3>Parque</h3>
+
+            <p>
+                Dia legal de parque
+            </p>
+
+        </div>
+
+
+    </article>
+
+
+</section>
+
+
+<!-- LIGHTBOX -->
+
+<div id="lightbox" onclick="fecharImagem()">
+
+    <span class="fechar">
+        ×
+    </span>
+
+
+    <img 
+    id="imagemGrande"
+    src=""
+    alt="Imagem ampliada"
+    >
+
+</div>
+
+
+
+
+
+
+
+<section class="sobre" id="sobre">
+
+
+<a href="https://www.youtube.com/watch?v=5glEjlQ0sJc"><h2>DO SEU MIÓ AMIGO OTAVIO</h2><a/a>
+
+
+
+<p>
+
+Feliz Aniversario Gamila 
+(Agora toda foto zuada que você enviar irá entrar aqui)
+</p>
+
+
+</section>
+
+
+
+
+
+
+
+<footer id="contato">
+
+
+<h3>Informações de contato para tirar seu Tarot</h3>
+
+
+<p>
++55 (31) 8877-2312
+
+</p>
+
+
+<p>
+© 2026 - Gamila Gameplays
+</p>
+
+
+</footer>
+
+
+
+
+
+<script src="script.js"></script>
+
+
+</body>
+
+</html>
+```
